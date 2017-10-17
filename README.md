@@ -17,7 +17,7 @@ It solves the generating function for enumerating the sum of dice scores when M 
 # Usage
 
 ```java
-    import SkrewEverything.FindCoefficients
+import SkrewEverything.FindCoefficients
 ```
 Either copy the `SkrewEverything` folder to your source folder or add the `FindCoefficients.jar` to your project
 
@@ -25,18 +25,18 @@ Either copy the `SkrewEverything` folder to your source folder or add the `FindC
 
 # Example
 ```java
-    import SkrewEverything.FindCoefficients;
+import SkrewEverything.FindCoefficients;
     
-    public class Example
+public class Example
+{
+    public static void main(String[] args)
     {
-        public static void main(String[] args)
-        {
-            FindCoefficients fc = new FindCoefficients(6,2); // First: sides, Second: no. of dice
-            ArrayList<BigInteger> al = fc.getCoefficients();
-            String equation = fc.getEquation();
-            int index = fc.indexOfPower(2); //Returns the index at which the coefficient of specified power is there in List
-        }
+        FindCoefficients fc = new FindCoefficients(6,2); // First: sides, Second: no. of dice
+        ArrayList<BigInteger> al = fc.getCoefficients();
+        String equation = fc.getEquation();
+        int index = fc.indexOfPower(2); //Returns the index at which the coefficient of specified power is there in List
     }
+}
 ```
 
 License
